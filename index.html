@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Traffic Signals:</h1>
+
+    <div class="Container">
+
+
+        <div class="div1">
+
+<p>Signal 1</p>        
+
+</div>
+        <div class="div2">
+            <p>Signal 2</p>  
+
+        </div>
+        <div class="div3">
+
+            <p> Signal 3</p>  
+        </div>
+    </div>
+
+    <script>
+
+let div1=document.querySelector('.div1')
+let div2=document.querySelector('.div2')
+let div3=document.querySelector('.div3')
+let para=document.querySelector('p')
+
+let userInput=prompt('Enter Your Signal Color:')
+
+let flag=false;
+
+
+if(userInput=='red'){
+
+    div1.style.backgroundColor='red';
+    div1.querySelector('p').innerHTML = 'Stop!';
+    div1.style.color='white'
+    div1.style.fontWeight='800'
+
+    flag=true;
+
+}
+
+
+else if(userInput=='green'){
+
+div2.style.backgroundColor='green';
+div2.querySelector('p').innerHTML = 'GO!';
+div2.style.color='white'
+div2.style.fontWeight='800'
+flag=false;
+
+
+}
+
+else if(userInput=='yellow'){
+
+div3.style.backgroundColor='yellow';
+div3.querySelector('p').innerHTML = 'Slwo Down!';
+div3.style.color='black'
+div3.style.fontWeight='800'
+flag=true;
+
+} 
+
+
+
+    </script>
+    
+</body>
+</html>
